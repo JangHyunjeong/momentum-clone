@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input type="text" placeholder="Write your name.">
-        <button type="submit">click</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 class="clock">00:00:00</h2>
+    <div class="container">
+        <h1 id="greeting" class="greeting hidden"></h1>
+        <h2 class="clock">00:00:00</h2>
+        <div class="weather" id="weather">
+            <span></span>
+            <span></span>
+        </div>
 
-    <form action="" id="toDoForm">
-        <input type="text">
-    </form>
+        <form id="login-form" class="login-form hidden">
+            <input type="text" placeholder="Write your name.">
+            <button type="submit">Click</button>
+        </form>
 
-    <ul id="toDoList"></ul>
+        <form action="" id="toDoForm" class="todo-form">
+            <input type="text" placeholder="write a todo">
+        </form>
 
-    <div class="quote">
-        <span></span>
-        <span></span>
-    </div>
+        <ul id="toDoList" class="todo-list"></ul>
 
-    <div class="" id="weather">
-        <span></span>
-        <span></span>
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </body>
 <script src="./js/greeting.js"></script>
